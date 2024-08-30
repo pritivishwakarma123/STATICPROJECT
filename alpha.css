@@ -1,0 +1,549 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Source Sans 3", sans-serif;
+    background-image: url(./image/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+   background-color:  #f5f5f5;
+}
+*{
+    text-decoration: none;
+    font-weight: 500;
+}
+#menubar{
+    display: none;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+/* nav div{
+    background-color: brown;
+} */
+nav >div >h1{
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+nav div h1 span{
+    font-weight: 100;
+}
+
+nav > div> ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#cont > li> a {
+    text-decoration: none;
+    color: white;
+    padding: 1.5rem;
+    display: block;
+}
+button{
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    width: 7rem;
+    background-color: transparent;
+    border: 2px solid rgb(206, 205, 205);
+    color: white;
+    font-size: 1rem;
+}
+#menu{
+    background-color: white;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /* border-radius: 8px; */
+    position: absolute;
+    top: 60px;
+    left: -91px;
+    width: 170%;
+    display: none;
+}
+#drop{
+    position: relative;
+}
+#menu>li>a{
+    display: block;
+    text-decoration: none;
+    border-bottom: 2px solid rgb(230, 226, 226);
+    color: rgb(104, 100, 100);
+    padding: 0.5rem 1rem;
+
+}
+#drop:hover >#menu{
+    display: block;
+}
+#menu>li>a:hover{
+    background-color: rgb(246, 112, 75);
+}
+nav #submenu{
+    position: relative;
+}
+nav #drop2{
+    position: absolute;
+    top: 0px;
+    right: 171px;
+    width: 100%;
+    background-color: aqua;
+    list-style-type: none;
+    border-bottom: 2px solid rgb(230, 226, 226);
+}
+#dropmenu{
+    background-color: white;
+    position: absolute;
+    top: 0;
+    right: 177px;
+    width: 100%;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    display: none;
+}
+#dropmenu>li>a{
+    display: block;
+    text-decoration: none;
+    border-bottom: 2px solid rgb(230, 226, 226);
+    color: rgb(104, 100, 100);
+    padding: 0.5rem 1rem;
+}
+#dropsub:hover #dropmenu{
+    display: block;
+}
+#dropmenu>li>a:hover{
+    background-color: rgb(246, 112, 75);
+}
+#dropsub{
+    position: relative;
+}
+
+/* alpha */
+#alpha{
+    text-align: center;
+    color: white;
+    margin-top: 7rem;
+    margin-bottom: 9.5rem;
+}
+#alpha>h1{
+    font-size: 3.5rem;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+#alpha>p{
+    font-size: 1.25em;
+    font-weight: 300;
+}
+#alpha>#sign{
+    background-color: rgb(222, 218, 218);
+    margin-top: 1.6rem;
+    width: 14%;
+    padding: 14px;
+    color: rgb(44, 44, 44);
+    margin-right: 1rem;
+    border: none;
+}
+#alpha>#learn{
+    background-color: white;
+    width: 14%;
+    padding: 14px;
+    color: white;
+    border: 2px solid rgb(207, 204, 204);
+    background-color: transparent;
+}
+#mobile{
+    background-color: white;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    padding-top: 2rem;
+    border-radius: 8px;
+}
+#mobile>h2{
+    font-size: 2.6rem;
+    font-weight: 300;
+    color: rgb(114, 113, 113);
+}
+#mobile>p{
+    border-top: 2px solid rgb(188, 185, 185);
+    width: 60%;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: rgb(107, 106, 106);
+    margin: auto;
+    padding-top: 2rem;
+    padding-bottom: 3.5rem;
+}
+#mobile>img{
+    height: 45vh;
+    width: 100%;
+}
+#signup{
+    color: rgb(222, 218, 218);
+    margin-top: 1.6rem;
+   text-align: center;
+    color: rgb(255, 253, 253);
+    margin-right: 0;
+    border: none;
+    background-color: #e89980 ;
+    padding-bottom: 50px;
+    padding-top: 5rem;
+
+}
+#signup >div>button{
+
+    background-color: #ffffff;
+    padding: 10px;
+    color: #e89980;
+
+
+}
+input{
+    height: 44px;
+    width: 19%;
+    padding: 3px ;
+    background-color: transparent;
+    background-color: #eba893;
+    border: none;
+    color: white;
+}
+input::placeholder{
+    color: white;
+    text-align: center;
+}
+#signup>p{
+margin: 0px;
+padding-bottom: 25px;
+}
+#logo{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    color: grey;
+    margin-top: 50px;
+    max-width:100%;
+}
+footer>div{
+    display: flex;
+justify-content: center;
+color: grey;
+font-size: 1.5rem;
+}
+footer>div>p{
+    border-right: 2px solid grey;
+    padding-left: 1.5rem;
+    padding-right: 2rem;
+}
+#p1{
+    border-right: none;
+}
+div > p> span{
+border-bottom: 2px dotted rgb(175, 166, 166);
+}
+div :hover span{
+   border: none;
+}
+#icon{
+    background-color: white;
+    width: 70%;
+    margin: auto;
+    border-radius: 2px;
+    margin-top: 2rem;
+}
+#icon>div{
+width: 48%;
+display: inline-block;
+text-align: center;
+padding-top: 2rem;
+
+}
+.fa-bolt{
+    color: white;
+    background-color:#e89980;
+    font-size: 4rem;
+    border-radius: 100%;
+    padding: 1rem 1rem;
+
+}
+.fa-chart-area{
+    color: white;
+    background-color:  #7fcdb8 ;
+    font-size: 4rem;
+    border-radius: 100%;
+    padding: 1rem 1rem;
+}
+.fa-cloud{
+    color: white;
+    background-color:#7c9aa2;
+    font-size: 4rem;
+    border-radius: 100%;
+    padding: 1rem 1rem;   
+}
+.fa-lock{
+    color: white;
+    background-color:#e5cb95;
+    font-size: 4rem;
+    border-radius: 100%;
+    padding: 1rem 1rem;   
+}
+
+
+#icon>div>h2{
+    font-size: 2rem;
+    
+
+}
+
+#icon>div>p{
+    font-size: 1rem;
+    color: grey;
+    
+}
+
+#div1{
+position: relative;
+left: 4px;
+top: 1px;
+border-right: 2px solid 
+#e5e5e5;
+border-bottom:  2px solid 
+#e5e5e5;
+}
+
+#div4{
+    border-left: 2px solid 
+    #e5e5e5;
+    border-top:  2px solid 
+    #e5e5e5;
+    
+}
+#cards{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    justify-content: space-between;
+    /* padding-top: 2rem; */
+    margin-top: 2rem;
+    /* background-color: red; */
+}
+#cards>div{
+    background-color: white;
+    width: 48%;
+    border-radius: 5px;
+    text-align: center;
+    padding-bottom: 2rem ;
+}
+#cards>div>img{
+    width: 100%;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+}
+#cards> div> button{
+    /* background-color: red; */
+    padding: 10px 20px;
+    border-color: 2px solid grey;
+    color: black;
+
+}
+#cards >div>h2{
+    font-size: 2rem;
+    color:grey;
+}
+#cards >div>p{
+    color: grey;
+}
+
+
+/* css for mobile version */
+@media(max-width:600px){
+    body{
+        height:100vh;
+        background-size: 200%;
+        background-position-x: center;
+        /* padding: 5em 3em 4em 3em; */
+    }
+    #menubar{
+        display: inline-block;
+        background-color: #b9b7b6;
+        /* background-color: transparent; */
+        color: white;
+        margin:20px;
+        margin-right: 0px;
+        padding: 5px 15px 5px 15px;
+
+        border-radius: 10px;
+        position: sticky;
+        top: 0;
+    }
+    nav{
+        display: none;
+    }
+    #mobile>img {
+        height: 18vh;
+        width: 100%;
+        margin-right: 2px;
+    }
+    #alpha{
+        margin-top: 0rem;
+        margin-bottom: 9.5rem;
+        width: 80%;
+        margin: auto;
+        background-size: auto, cover;
+        padding-left: 5rem;
+
+    }
+    #alpha>h1{
+        font-size: 2rem;
+        font-weight: 300;
+        margin-bottom: 0;
+    }
+    #alpha>p{
+        font-size: 1rem;
+        font-weight: 300;
+    }
+    #alpha>#sign{
+        background-color: rgb(222, 218, 218);
+        margin-top: 1.6rem;
+        width: 100%;
+        padding: 14px;
+        color: rgb(44, 44, 44);
+        margin-right: 1rem;
+        border: none;
+        margin-bottom: 1rem;
+    }
+    #alpha>#learn{
+        background-color: white;
+        width: 100%;
+        padding: 14px;
+        color: white;
+        border: 2px solid rgb(207, 204, 204);
+        background-color: transparent;
+        margin-bottom: 50PX;
+    }
+    #signup{
+        margin-right: -5rem;
+    }
+    #mobile{
+        width: 117%;
+        padding-top: 2rem;
+        margin-top: 0;        
+    }
+    #mobile>h2{
+        font-size: 1.75rem;
+        line-height: 1.35em;
+        display: block;
+        justify-content:center;
+        margin: 0px 6px 0px 0px;
+        /* width: auto%; */
+    }
+    #mobile>p{
+        width: 95%;
+        font-size: 1.2rem;
+        margin: 0px -44px 0px 0px; 
+    }
+    BR{
+        display: none;
+    }
+    
+    #icon>div{
+        width: 100%;
+    }
+    #div1 {
+        border: none;
+            border-radius: 0;
+           
+            margin: 3rem;
+            padding: 3em 1em          
+    }
+    #div2 {
+        border-radius: 0;
+     
+        margin: 3rem;
+        padding: 3em 1em
+}
+#div3 {
+    border-radius: 0;
+    
+    margin: 3rem;
+    padding: 3em 1em
+}
+#div4 {
+   
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    margin: 1em;
+    padding: 3em 1em
+    
+}
+
+#icon{
+    width: 117%;
+    margin: auto;
+    margin-top: 1rem;
+    
+}
+#icon>div{
+width: 100%;
+margin: 0;
+padding: 0;
+padding-top: 2.5rem;    
+}
+
+#cards{
+    display: block;
+    width: 200%;
+    align-items: center;
+   margin: 0px 0px 0px 0px;
+}
+
+#cards>div>img{
+    width: 100%;
+}
+#cards>div{
+    width: 60%;
+}
+#cards> div> button{
+
+   width: 90%;
+   color: grey;  
+
+}
+
+#signup >div>button{
+
+    width: 80%;
+    margin-top: 1rem;
+    border: none;
+}
+#signup>h2{
+    font-size: 2rem;
+    font-weight: 200;
+}
+#signup>p{
+    font-size: 1.2rem;
+    font-weight: 250;
+}
+input{
+    height: 44px;
+    width: 80%;
+    /* padding: 3px ; */
+}
+
+footer>div{
+    display: block;
+ margin-left:5rem;
+font-size: 1.5rem;
+}
+footer>div>p{
+   border: none;
+   text-align: center;
+   font-size: 1rem;
+   color: rgb(169, 161, 161);
+}
+}
